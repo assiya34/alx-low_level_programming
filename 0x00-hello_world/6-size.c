@@ -3,9 +3,9 @@
 /**
  * main - entry point
  *
- * description: size of to print the size of various typs
+ * Description: size of to print the size of various typs
  *
- * always return 0
+ * return always (0)
 */
 
 int main(void)
