@@ -2,9 +2,9 @@
 
 /**
  * main - entry point
- * 
+ *
  * description: size of to print the size of various typs
- * 
+ *
  * always return 0
 */
 
