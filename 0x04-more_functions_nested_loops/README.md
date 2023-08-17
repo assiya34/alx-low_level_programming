@@ -1,1 +1,1 @@
-this is README.md for 0x04-more_functions_nested_loops
+this is a readme file for 0x04-more_functions_nested_loops
