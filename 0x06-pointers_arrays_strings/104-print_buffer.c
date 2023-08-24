@@ -1,37 +1,37 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_buffer - prints buffer
- * @b: buffer
- * @size: size
- * Return: void
+ * rev_string - reverse array
+ * @n: integer params
+ * Return: 0
  */
 
-void print_buffer(char *b, int size)
+void rev_string(char *n)
 {
-	int o, j, i;
+	int i = 0;
+	int j = 0;
+	char temp;
 
-	o = 0;
-
-	if (size <= 0)
+	while (*(n + i) != '\0')
 	{
-		printf("\n");
-		return;
+		i++;
 	}
-	while (o < size)
+	i--;
+
+	for (j = 0; j < i; j++, i--)
 	{
-		j = size - o < 10 ? size - o : 10;
-		printf("%08x: ", o);
-		for (i = 0; i < 10; i++)
-		{
-			if (i < j)
-				printf("%02x", *(b + o + i));
-			else
-				printf("  ");
-			if (i % 2)
-			{
-				printf(" ");
-			}
-		}
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
+	}
+}
+
+/**
+ * infinite_add - add 2 numbers together
+ * @n1: text representation of 1st number to add
+ * @n2: text representation of 2nd number to add
+ * @r: pointer to buffer
+ * @size_r: buffer size
+ * Return: pointer to calling function
+ */
 
